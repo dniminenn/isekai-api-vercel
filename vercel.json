@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "api/total_supply.py",
-            "use": "@vercel/python"
+            "use": "python@3.9"
         }
     ]
 }
