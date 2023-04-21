@@ -11,6 +11,10 @@
         "src": "/api/totalsupply",
         "dest": "/api/total_supply.py"
       }
-    ]
-  }
+    ],
+    "redirects": [
+        { "source": "/index.html", "destination": "https://docs.isekailegends.com", "permanent": false },
+        { "source": "/", "destination": "https://docs.isekailegends.com", "permanent": false }
+      ]  
+}
   
