@@ -8,6 +8,14 @@
       {
         "src": "api/price.py",
         "use": "@vercel/python"
+      },
+      {
+        "src": "api/isekai_liquidity.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "api/isekai_mktcap.py",
+        "use": "@vercel/python"
       }
     ],
     "rewrites": [
@@ -18,6 +26,14 @@
       {
         "source": "/api/price",
         "destination": "/api/price.py"
+      },
+      {
+        "source": "/api/mktcap",
+        "destination": "/api/isekai_mktcap.py"
+      },
+      {
+        "source": "/api/liquidity",
+        "destination": "/api/isekai_liquidity.py"
       },
       {
         "source": "/(.*)",
