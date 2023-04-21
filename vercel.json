@@ -4,12 +4,20 @@
       {
         "src": "api/total_supply.py",
         "use": "@vercel/python"
-      }
+      },
+      { 
+        "src": "api/price.py", 
+        "use": "@vercel/python" 
+    }
     ],
     "routes": [
       {
         "src": "/api/totalsupply",
         "dest": "/api/total_supply.py"
+      },
+      {
+        "src": "/api/price",
+        "dest": "/api/price.py"
       },
       { "src": "/(.*)", "dest": "https://www.isekailegends.com/vercelapi/$1"}
     ]
