@@ -1,0 +1,1 @@
+# stub for top 20 wallets
