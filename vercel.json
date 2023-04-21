@@ -11,7 +11,7 @@
         "src": "/api/totalsupply",
         "dest": "/api/total_supply.py"
       },
-      { "src": "/(.*)", "dest": "https://docs.isekailegends.com/$1"}
+      { "src": "/(.*)", "dest": "https://www.isekailegends.com/vercelapi/$1"}
     ]
 }
   
