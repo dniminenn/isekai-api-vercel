@@ -27,6 +27,7 @@ class handler(BaseHTTPRequestHandler):
 
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
+        self.send_header('Cache-Control', 's-maxage=300, stale-while-revalidate')
         self.end_headers()
         self.wfile.write(str(total_supply).encode())
         return
